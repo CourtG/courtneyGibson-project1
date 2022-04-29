@@ -1,0 +1,27 @@
+/* _typography.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap');
+
+/* variables */
+
+/* site fonts */
+$titleFont: "Raleway", sans-serif;
+$bodyFont: "Lora", serif;
+
+
+/* if we set our root element font-size to 125%, then 1 rem = 20px */
+$baseFontSize: 1rem;
+
+
+
+/* site colours */
+$primary: #2E2E2E;
+$secondary: #999999;
+$tertiary: #F6F6F6;
+$quaternary: #333333;
+$greenFont: #539908;
+
+p {
+    font: 14px/24px $bodyFont;
+    color: $secondary;
+}
