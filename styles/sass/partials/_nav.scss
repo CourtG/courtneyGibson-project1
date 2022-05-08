@@ -12,13 +12,35 @@ ul {
     list-style: none;
 }
 
+
 .menu {
+    background-image: url(../assets/home-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 50px;
 }
 
-.menu ul {
+.menu div ul {
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.menu a {
+    font-family: $titleFont;
+    letter-spacing: 0.5px;
+    font: 15px 24px;
+    text-decoration: none;
     text-transform: uppercase;
+    color: #000;
+    padding-right: 35px;
 
 }
+
+
+

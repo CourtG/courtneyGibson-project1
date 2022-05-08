@@ -18,3 +18,8 @@ html { box-sizing: border-box;}
 .skip-link:focus {
     left: 0;
 }
+
+body, html {
+    height: 100%;
+    margin: 0;
+}

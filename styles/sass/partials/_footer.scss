@@ -1,0 +1,30 @@
+footer {
+    background-color: $quaternary;
+}
+
+
+
+.footerNav {
+    display: flex;
+    flex-shrink: inherit;
+    width: 960px;
+    justify-content: space-around;   
+}
+
+.footerNav ul {
+    min-width: calc(100%/3);
+}
+
+.foooterNav ul address {
+    color: $secondary;
+}
+.copyright{
+    display: flex;
+    background-color: $primary;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright span {
+    color: $greenFont;
+}

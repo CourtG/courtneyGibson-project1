@@ -4,6 +4,12 @@
 
 /* variables */
 
+@font-face {
+    font-family: 'Lora';
+    font-style: italic;
+    src: url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap')
+}
+
 /* site fonts */
 $titleFont: "Raleway", sans-serif;
 $bodyFont: "Lora", serif;
@@ -24,4 +30,49 @@ $greenFont: #539908;
 p {
     font: 14px/24px $bodyFont;
     color: $secondary;
+}
+
+blockquote {
+    font-family: $bodyFont;
+    font-style: italic;
+    font-size: 24px;
+    color: $primary;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    
+}
+
+h1 {
+    font-family: $titleFont;
+    font-size: 46px;
+    color: #000;
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+h2,
+h3,
+h4 {
+    font-family: $titleFont;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 15px;
+    line-height: 24px;
+
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: $greenFont;
 }

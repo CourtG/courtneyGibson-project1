@@ -1,0 +1,198 @@
+
+// RECIPES GALLERY STYLES//
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+//box 1//
+.recipesList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.recipesList li {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+
+.recipesList h2 {
+    position:relative
+}
+
+.recipesList h2::after {
+    content: '';
+    height: 2px;
+    width: 20%;
+    bottom: -8px;
+    position: absolute;
+    background: $greenFont;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.recipesList p {
+    padding: 20px 150px;
+    text-align: center;
+}
+
+.recipesList button {
+    background-color: $greenFont;
+    color: $tertiary ;
+    border: 1px solid #539900;
+    padding: 20px 45px;
+    font: 16px $titleFont;
+    font-weight: normal;
+}  
+
+//box2//
+
+.recipes img {
+    width: 50%;
+    height: auto;
+}
+
+//CATEGORIES STYLES//
+
+.categories {
+    background-color: $tertiary;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories img {
+    width: 50%;
+    max-height: 100%;
+}
+
+.categories div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    width: 50%;
+}
+
+.categories ul {
+    width: 40%;
+
+}
+
+
+// OUR RESTAURANT//
+
+.ourRestaurants {
+    padding: 100px;
+    // position: relative;
+}
+
+.ourRestaurants .logo {
+    position: absolute;
+    left: 58%;
+    padding-bottom: 25px;
+}
+
+.ourRestaurants ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourRestaurants ul li h2,
+.ourRestaurants ul li p {
+    flex-direction: column;
+    text-align: center;
+}
+
+.ourRestaurants li h2 {
+    position: relative;
+}
+
+.ourRestaurants li h2::after {
+    content: '';
+    height: 4px;
+    width: 25%;
+    bottom: -25px;
+    position: absolute;
+    background: $greenFont;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.ourRestaurants p {
+    padding-top: 20px;
+}
+
+
+
+
+//GALLERY STYLES//
+
+.gallery {
+    margin: 0;
+    width: 100%;
+}
+
+.galleryImgList li {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100%/3);
+}
+
+.galleryImgList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery ul li img {
+    min-width: calc(100%/3);
+}
+
+
+//HUNGRY CLIENTS SECTION//
+
+.hungryClients {
+    background-color: rgb(213, 236, 136);
+    padding: 100px;
+    position: relative;
+}
+
+.hungryClients ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+blockquote {
+    text-align: center;
+    padding: 20px;
+}
+
+.hungryClients ul h2::after {
+    content: '';
+    height: 4px;
+    width: 4%;
+    bottom: 64%;
+    position: absolute;
+    background: $greenFont;
+    margin: 0 auto;
+    left: 0;
+    right: -36px;
+}

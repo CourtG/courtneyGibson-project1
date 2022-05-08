@@ -240,12 +240,402 @@ html {
   left: 0;
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 /* _typography.scss */
 /* variables */
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  src: url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
+}
 /* site fonts */
 /* if we set our root element font-size to 125%, then 1 rem = 20px */
 /* site colours */
 p {
   font: 14px/24px "Lora", serif;
   color: #999999;
+}
+
+blockquote {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #2E2E2E;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 46px;
+  color: #000;
+  line-height: 24px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #539908;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body,
+ul {
+  list-style: none;
+}
+
+.menu {
+  background-image: url(../assets/home-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px 50px;
+}
+
+.menu div ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menu a {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  font: 15px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  padding-right: 35px;
+}
+
+footer {
+  background-color: #333333;
+}
+
+.footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: inherit;
+      flex-shrink: inherit;
+  width: 960px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerNav ul {
+  min-width: 33.3333333333%;
+}
+
+.foooterNav ul address {
+  color: #999999;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2E2E2E;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright span {
+  color: #539908;
+}
+
+.recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.recipesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.recipesList li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recipesList h2 {
+  position: relative;
+}
+
+.recipesList h2::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  bottom: -8px;
+  position: absolute;
+  background: #539908;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.recipesList p {
+  padding: 20px 150px;
+  text-align: center;
+}
+
+.recipesList button {
+  background-color: #539908;
+  color: #F6F6F6;
+  border: 1px solid #539900;
+  padding: 20px 45px;
+  font: 16px "Raleway", sans-serif;
+  font-weight: normal;
+}
+
+.recipes img {
+  width: 50%;
+  height: auto;
+}
+
+.categories {
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories img {
+  width: 50%;
+  max-height: 100%;
+}
+
+.categories div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px;
+  width: 50%;
+}
+
+.categories ul {
+  width: 40%;
+}
+
+.ourRestaurants {
+  padding: 100px;
+}
+
+.ourRestaurants .logo {
+  position: absolute;
+  left: 58%;
+  padding-bottom: 25px;
+}
+
+.ourRestaurants ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourRestaurants ul li h2,
+.ourRestaurants ul li p {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.ourRestaurants li h2 {
+  position: relative;
+}
+
+.ourRestaurants li h2::after {
+  content: "";
+  height: 4px;
+  width: 25%;
+  bottom: -25px;
+  position: absolute;
+  background: #539908;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.ourRestaurants p {
+  padding-top: 20px;
+}
+
+.gallery {
+  margin: 0;
+  width: 100%;
+}
+
+.galleryImgList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 33.3333333333%;
+}
+
+.galleryImgList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery ul li img {
+  min-width: 33.3333333333%;
+}
+
+.hungryClients {
+  background-color: rgb(213, 236, 136);
+  padding: 100px;
+  position: relative;
+}
+
+.hungryClients ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+blockquote {
+  text-align: center;
+  padding: 20px;
+}
+
+.hungryClients ul h2::after {
+  content: "";
+  height: 4px;
+  width: 4%;
+  bottom: 64%;
+  position: absolute;
+  background: #539908;
+  margin: 0 auto;
+  left: 0;
+  right: -36px;
 }
