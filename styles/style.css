@@ -273,7 +273,7 @@ h4 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 29px;
   line-height: 36px;
   letter-spacing: 1px;
 }
@@ -287,6 +287,10 @@ h4 {
   font-size: 18px;
   line-height: 24px;
   color: #539908;
+}
+
+span {
+  color: #2E2E2E;
 }
 
 p {
@@ -307,6 +311,12 @@ blockquote {
   font-family: "Raleway", sans-serif;
   color: #000;
   font-size: 14px;
+}
+
+.notWorking {
+  font-family: "Lora", serif;
+  color: #999999;
+  font-style: italic;
 }
 
 html {
@@ -339,7 +349,8 @@ ul {
 }
 
 .menu,
-.blogMenu {
+.blogMenu,
+.contactMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +364,8 @@ ul {
 }
 
 .menu div ul,
-.blogMenu div ul {
+.blogMenu div ul,
+.contactMenu div ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -363,7 +375,8 @@ ul {
 }
 
 .menu a,
-.blogMenu a {
+.blogMenu a,
+.contactMenu a {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.5px;
   font: 15px 24px;
@@ -415,11 +428,9 @@ footer {
 
 .menu {
   background-image: url(../assets/home-1.jpeg);
-  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
   width: 100vw;
+  min-height: 976px;
 }
 
 .recipes {
@@ -465,13 +476,13 @@ footer {
 
 .recipesList h2::after {
   content: "";
-  height: 2px;
-  width: 20%;
-  bottom: -8px;
+  height: 4px;
+  width: 17%;
+  bottom: -16px;
   position: absolute;
   background: #539908;
   margin: 0 auto;
-  left: 0;
+  left: 0px;
   right: 0;
 }
 
@@ -569,12 +580,12 @@ footer {
 .ourRestaurants li h2::after {
   content: "";
   height: 4px;
-  width: 25%;
+  width: 26%;
   bottom: -25px;
   position: absolute;
   background: #539908;
   margin: 0 auto;
-  left: 0;
+  left: 13px;
   right: 0;
 }
 
@@ -637,14 +648,14 @@ footer {
 
 blockquote {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .hungryClients ul h2::after {
   content: "";
   height: 4px;
   width: 4%;
-  bottom: 64%;
+  bottom: 66%;
   position: absolute;
   background: #539908;
   margin: 0 auto;
@@ -652,11 +663,71 @@ blockquote {
   right: -36px;
 }
 
+.hungryClients ul li::before .hungryClients ul li blockquote::after {
+  content: '"';
+  height: 4px;
+  width: 4%;
+  bottom: 66%;
+  position: absolute;
+  color: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: -36px;
+}
+
 .blogMenu {
   background-image: url(../assets/blog-1.jpeg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 604px;
+}
+
+.contactMenu {
+  background-image: url(../assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 604px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.contact ul {
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.dropUs {
+  width: 60%;
+}
+
+.contactDetails {
+  background-color: #F6F6F6;
+  width: 40%;
+  padding-left: 40px;
+}
+
+.contactDetails ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dragonfruit {
+  background-image: url(../assets/contact-2.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 604px;
   width: 100vw;
 }

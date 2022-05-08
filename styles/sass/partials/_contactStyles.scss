@@ -1,0 +1,56 @@
+//HERO IMAGE//
+
+.contactMenu {
+    background-image: url(../assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 604px;
+}
+
+//CONTACT SECTION STYLES//
+
+.contact {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.contact ul {
+    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.dropUs {
+    width: 60%;
+}
+
+.contactDetails {
+    background-color: $tertiary;
+    width: 40%;
+    padding-left: 40px;
+}
+
+.contactDetails ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+//DRAGONFRUIT IMAGE/SECTION//
+
+.dragonfruit {
+    background-image: url(../assets/contact-2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 604px;
+    width: 100vw;
+}

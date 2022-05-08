@@ -14,7 +14,8 @@ ul {
 
 
 .menu,
-.blogMenu {
+.blogMenu,
+.contactMenu {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -22,13 +23,15 @@ ul {
 }
 
 .menu div ul,
-.blogMenu div ul {
+.blogMenu div ul,
+.contactMenu div ul {
     justify-content: space-between;
     align-items: flex-end;
 }
 
 .menu a,
-.blogMenu a {
+.blogMenu a,
+.contactMenu a {
     font-family: $titleFont;
     letter-spacing: 0.5px;
     font: 15px 24px;
