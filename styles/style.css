@@ -255,20 +255,6 @@ body, html {
 /* site fonts */
 /* if we set our root element font-size to 125%, then 1 rem = 20px */
 /* site colours */
-p {
-  font: 14px/24px "Lora", serif;
-  color: #999999;
-}
-
-blockquote {
-  font-family: "Lora", serif;
-  font-style: italic;
-  font-size: 24px;
-  color: #2E2E2E;
-  line-height: 36px;
-  letter-spacing: 0.6px;
-}
-
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 46px;
@@ -303,6 +289,26 @@ h4 {
   color: #539908;
 }
 
+p {
+  font: 14px/24px "Lora", serif;
+  color: #999999;
+}
+
+blockquote {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #2E2E2E;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+}
+
+.pineappleTitle {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -332,13 +338,8 @@ ul {
   list-style: none;
 }
 
-.menu {
-  background-image: url(../assets/home-1.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+.menu,
+.blogMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +352,8 @@ ul {
   padding: 30px 50px;
 }
 
-.menu div ul {
+.menu div ul,
+.blogMenu div ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -360,7 +362,8 @@ ul {
           align-items: flex-end;
 }
 
-.menu a {
+.menu a,
+.blogMenu a {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.5px;
   font: 15px 24px;
@@ -408,6 +411,15 @@ footer {
 
 .copyright span {
   color: #539908;
+}
+
+.menu {
+  background-image: url(../assets/home-1.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 .recipes {
@@ -638,4 +650,13 @@ blockquote {
   margin: 0 auto;
   left: 0;
   right: -36px;
+}
+
+.blogMenu {
+  background-image: url(../assets/blog-1.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }

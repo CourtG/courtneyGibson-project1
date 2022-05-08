@@ -27,21 +27,6 @@ $tertiary: #F6F6F6;
 $quaternary: #333333;
 $greenFont: #539908;
 
-p {
-    font: 14px/24px $bodyFont;
-    color: $secondary;
-}
-
-blockquote {
-    font-family: $bodyFont;
-    font-style: italic;
-    font-size: 24px;
-    color: $primary;
-    line-height: 36px;
-    letter-spacing: 0.6px;
-    
-}
-
 h1 {
     font-family: $titleFont;
     font-size: 46px;
@@ -75,4 +60,29 @@ h4 {
     font-size: 18px;
     line-height: 24px;
     color: $greenFont;
+}
+
+//INDEX FONTS//
+
+p {
+    font: 14px/24px $bodyFont;
+    color: $secondary;
+}
+
+blockquote {
+    font-family: $bodyFont;
+    font-style: italic;
+    font-size: 24px;
+    color: $primary;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+
+}
+
+//BLOG FONTS//
+
+.pineappleTitle {
+    font-family: $titleFont;
+    color: #000;
+    font-size: 14px;
 }
