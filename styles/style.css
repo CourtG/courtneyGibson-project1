@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
 html {
   line-height: 1.15;
@@ -240,9 +241,15 @@ html {
   left: 0;
 }
 
-body, html {
-  height: 100%;
+html,
+body ul,
+li {
   margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 100px;
 }
 
 /* _typography.scss */
@@ -269,7 +276,6 @@ h3,
 h4 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.5px;
-  color: #000;
 }
 
 h2 {
@@ -281,12 +287,16 @@ h2 {
 h3 {
   font-size: 15px;
   line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 30px;
   line-height: 24px;
   color: #539908;
+  margin: 0 0;
 }
 
 span {
@@ -317,6 +327,12 @@ blockquote {
   font-family: "Lora", serif;
   color: #999999;
   font-style: italic;
+}
+
+.underPosts {
+  font-family: "Raleway", sans-serif;
+  color: #999999;
+  font-size: 14px;
 }
 
 html {
@@ -388,25 +404,36 @@ ul {
 
 footer {
   background-color: #333333;
+  padding-top: 25px;
 }
 
 .footerNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: inherit;
-      flex-shrink: inherit;
-  width: 960px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footerNav ul {
   min-width: 33.3333333333%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
 }
 
-.foooterNav ul address {
-  color: #999999;
+.left {
+  position: relative;
+  padding-right: 50px;
 }
 
 .copyright {
@@ -424,6 +451,27 @@ footer {
 
 .copyright span {
   color: #539908;
+}
+
+.footerForm {
+  padding: 2px;
+}
+
+.right button {
+  color: #fff;
+  border: solid 1px #2E2E2E;
+  background-color: #539908;
+  padding: 2px;
+  margin: 0;
+}
+
+.footerEmail {
+  background-color: #656565;
+  color: #999999;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
 }
 
 .menu {
@@ -541,7 +589,7 @@ footer {
 }
 
 .ourRestaurants {
-  padding: 100px;
+  padding: 250px 0px 175px 0px;
 }
 
 .ourRestaurants .logo {
@@ -643,36 +691,87 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
 }
 
-blockquote {
-  text-align: center;
-  padding: 40px 20px;
+.hungryClients h2 {
+  position: relative;
 }
 
 .hungryClients ul h2::after {
   content: "";
   height: 4px;
-  width: 4%;
-  bottom: 66%;
   position: absolute;
   background: #539908;
   margin: 0 auto;
-  left: 0;
-  right: -36px;
+  right: 35%;
+  width: 28%;
+  bottom: -50%;
 }
 
-.hungryClients ul li::before .hungryClients ul li blockquote::after {
-  content: '"';
-  height: 4px;
-  width: 4%;
-  bottom: 66%;
+.hungryClients ul li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+blockquote {
+  text-indent: -0.45em;
+  text-align: center;
+  font-style: italic;
+  quotes: "“" "”" "‘" "’";
+  position: relative;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 110%;
+  color: #FFF;
   position: absolute;
+  left: -15%;
+  top: -11%;
+}
+
+blockquote:after {
+  content: close-quote;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 110%;
+  color: #FFF;
+  position: absolute;
+  bottom: -37%;
+  right: -11%;
+}
+
+.navArrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrowRight {
   color: #fff;
-  margin: 0 auto;
-  left: 0;
-  right: -36px;
+  font-size: 40px;
+  padding-left: 25px;
+}
+
+.arrowLeft {
+  color: #fff;
+  font-size: 40px;
+  padding-right: 25px;
+  opacity: 50%;
 }
 
 .blogMenu {
@@ -682,9 +781,106 @@ blockquote {
   min-height: 604px;
 }
 
+.sally ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sally img {
+  float: left;
+}
+
+.sally ul li {
+  background-color: #F6F6F6;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.sallyBlurb {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F6F6F6;
+}
+
+.sallyBlurb li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.relatedPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.relatedPosts ul {
+  width: 33.3333333333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commentSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.commentSection ul li {
+  padding: 10px;
+}
+
 .contactMenu {
   background-image: url(../assets/contact-1.jpeg);
   background-repeat: no-repeat;
+  position: sticky;
   width: 100vw;
   min-height: 604px;
 }
@@ -694,23 +890,23 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin: 0;
 }
 
 .contact ul {
   margin: 0;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 70px;
+  padding-bottom: 65px;
+  padding-left: 50px;
 }
 
 .dropUs {
   width: 60%;
+  padding-right: 100px;
 }
 
 .contactDetails {
   background-color: #F6F6F6;
   width: 40%;
-  padding-left: 40px;
 }
 
 .contactDetails ul {
@@ -723,6 +919,20 @@ blockquote {
           flex-direction: column;
 }
 
+.contactDetails h3 {
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.contactDetails li p {
+  margin: 0;
+}
+
+.contactDetails li p a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .dragonfruit {
   background-image: url(../assets/contact-2.jpeg);
   background-position: center center;
@@ -730,4 +940,99 @@ blockquote {
   background-size: cover;
   height: 604px;
   width: 100vw;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  max-width: 768px;
+  margin: 0px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 50px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.email {
+  float: right;
+  width: 50%;
+}
+
+input[type=text],
+[type=email],
+select,
+textarea {
+  background-color: #F6F6F6;
+  border: none;
+  color: #474544;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px;
+}
+
+input[type=text]:focus,
+[type=email]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+.subject {
+  width: 45%;
+  float: left;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+#form_button {
+  display: inline-block;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  color: #539908;
+}
+
+input[type=text],
+[type=email],
+select,
+textarea {
+  font-size: 0.875em;
 }

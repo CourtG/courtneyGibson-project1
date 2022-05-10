@@ -19,7 +19,15 @@ html { box-sizing: border-box;}
     left: 0;
 }
 
-body, html {
-    height: 100%;
+html, 
+body
+ul,
+li {
     margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    // max-width: 960px;
+    margin: 100px;
 }

@@ -41,7 +41,6 @@ h3,
 h4 {
     font-family: $titleFont;
     letter-spacing: 0.5px;
-    color: #000;
 }
 
 h2 {
@@ -53,18 +52,22 @@ h2 {
 h3 {
     font-size: 15px;
     line-height: 24px;
-
+    font-family: $titleFont;
+    letter-spacing: 0.5px;
+    margin: 0;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 24px;
     color: $greenFont;
+    margin: 0 0;
 }
 
 span {
     color: $primary;
 }
+
 
 //INDEX FONTS//
 
@@ -96,4 +99,11 @@ blockquote {
     font-family: $bodyFont;
     color: $secondary;
     font-style: italic;
+}
+
+//BLOG FONTS//
+.underPosts {
+    font-family: $titleFont;
+    color: $secondary;
+    font-size: 14px;
 }

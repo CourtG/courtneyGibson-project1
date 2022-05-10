@@ -1,23 +1,29 @@
 footer {
     background-color: $quaternary;
+    padding-top: 25px;
 }
-
-
 
 .footerNav {
     display: flex;
-    flex-shrink: inherit;
-    width: 960px;
-    justify-content: space-around;   
+    margin: 0 0;
+    justify-content: space-between;   
+    align-items: flex-start;
 }
 
 .footerNav ul {
     min-width: calc(100%/3);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-.foooterNav ul address {
-    color: $secondary;
+.left {
+    position:relative;
+    padding-right: 50px;
 }
+
+
+
 .copyright{
     display: flex;
     background-color: $primary;
@@ -27,4 +33,26 @@ footer {
 
 .copyright span {
     color: $greenFont;
+}
+
+.footerForm {
+    padding: 2px;
+}
+
+.right button {
+    color: #fff;
+    border: solid 1px $primary;
+    background-color: $greenFont;
+    padding: 2px;
+    margin: 0;
+}
+
+.footerEmail {
+    background-color: #656565;
+    color: $secondary;
+}
+
+
+input[type=text]:focus {
+    background-color: #fff;
 }

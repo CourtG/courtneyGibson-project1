@@ -3,32 +3,34 @@
 .contactMenu {
     background-image: url(../assets/contact-1.jpeg);
     background-repeat: no-repeat;
+    position: sticky;
     width: 100vw;
     min-height: 604px;
 }
+
 
 //CONTACT SECTION STYLES//
 
 .contact {
     display: flex;
     width: 100%;
-    margin: 0;
 }
 
 .contact ul {
     margin: 0;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 70px;
+    padding-bottom: 65px;
+        padding-left: 50px;
 }
 
 .dropUs {
     width: 60%;
+    padding-right: 100px;
 }
 
 .contactDetails {
     background-color: $tertiary;
     width: 40%;
-    padding-left: 40px;
 }
 
 .contactDetails ul {
@@ -36,13 +38,19 @@
     flex-direction: column;
 }
 
+.contactDetails h3 {
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
 
+.contactDetails li p {
+    margin: 0;
+}
 
-
-
-
-
-
+.contactDetails li p a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 //DRAGONFRUIT IMAGE/SECTION//
 
@@ -53,4 +61,103 @@
     background-size: cover;
     height: 604px;
     width: 100vw;
+}
+
+// FORM STYLES//
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    max-width: 768px;
+    margin: 0px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 50px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.email {
+    float: right;
+    width: 50%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background-color: $tertiary;
+    border: none;
+    color: #474544;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+.subject {
+    width: 45%;
+    float: left;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+
+#form_button {
+    display: inline-block;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    color: $greenFont;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    font-size: 0.875em;
 }

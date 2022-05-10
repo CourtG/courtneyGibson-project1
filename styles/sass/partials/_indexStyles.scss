@@ -101,7 +101,7 @@
 // OUR RESTAURANT//
 
 .ourRestaurants {
-    padding: 100px;
+    padding: 250px 0px 175px 0px;
     // position: relative;
 }
 
@@ -186,38 +186,75 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    
 }
 
-blockquote {
-    text-align: center;
-    padding: 40px 20px;
+.hungryClients h2 {
+    position: relative;
 }
 
 .hungryClients ul h2::after {
     content: '';
     height: 4px;
-    width: 4%;
-    bottom: 66%;
     position: absolute;
     background: $greenFont;
     margin: 0 auto;
-    left: 0;
-    right: -36px;
+    right: 35%;
+    width: 28%;
+    bottom: -50%;
 }
 
-.hungryClients ul li::before
+.hungryClients ul li {
+    flex-direction: row;
+    flex-basis: auto;
+}
 
+blockquote {
+    text-indent: -0.45em;
+    text-align: center;
+    font-style: italic; 
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    position: relative;
+}
 
-.hungryClients ul li blockquote::after {
-    content: '"';
-    height: 4px;
-    width: 4%;
-    bottom: 66%;
+blockquote:before {
+    content: open-quote;
+    font-family: $titleFont;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 110%;
+    color: #FFF;
     position: absolute;
+    left: -15%;
+    top: -11%;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-family: $titleFont;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 110%;
+    color: #FFF;
+    position: absolute;
+    bottom: -37%;
+    right: -11%;
+}
+
+.navArrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowRight {
     color: #fff;
-    margin: 0 auto;
-    left: 0;
-    right: -36px;
+    font-size: 40px;
+    padding-left: 25px;
+}
+
+.arrowLeft {
+    color: #fff;
+    font-size: 40px;
+    padding-right: 25px;
+    opacity: 50%;
 }

@@ -7,3 +7,67 @@
     min-height: 604px;
 }
 
+.sally ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.sally img {
+    float: left;
+}
+
+.sally ul li {
+    background-color: $tertiary;
+    padding-left: 20px;
+    padding-right: 0;
+    
+}
+
+.sallyBlurb{
+    float: right;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $tertiary;
+}
+
+.sallyBlurb li {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+// RELATED POSTS SECTION STYLES//
+
+.relatedPosts {
+    display: flex;
+    width: 100%;
+}
+
+.relatedPosts ul {
+    width: calc(100%/3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+//COMMENTS SECTION STYLES//
+
+.commentSection ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.commentSection ul li {
+    padding: 10px;
+}
+

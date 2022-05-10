@@ -51,13 +51,37 @@
             <ul class="dropUs">
                 <li><h2>DROP US A LINE</h2></li>
 
-                <button>SEND MESSAGE</button>
+                <form action="#" method="post" id="contact_form">
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Your Name" name="name" id="name_input" required>
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Your Email" name="email" id="email_input" required>
+                    </div>
+                
+                    </div>
+                    <div class="subject">
+                        <label for="subject"></label>
+                        <input type="text" placeholder="Subject" name="subject" id="subject_input" required>
+                
+                    </div>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send Message →" id="form_button" />
+                    </div>
+                </form>
+
             </ul>
 
             <ul class="contactDetails">
                 <li><h2>CONTACT DETAILS</h2></li>
-                <li><p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea
-                tatsoi aubergine spring onion bush tomato kale</p></li>
+                <li><p>Beetroot water spinach okra water chestnut <br> ricebean pea catsear courgette summer <br>purslane. Water spinach arugula pea
+                tatsoi <br>aubergine spring onion bush tomato kale</p></li>
 
                 <li><h3>WORKING HOURS</h3></li>
                 <li><p><span>MON - FRI : </span>08:00am - 05:30pm</p></li>
@@ -71,7 +95,7 @@
 
                 <li><p><a href="mailto:yum@food.com"></a>yum@food.com</p></li>
 
-                <li>+1 234 567 8910</li>
+                <li><p>+1 234 567 8910</p></li>
             </ul>        
         </section>
 
