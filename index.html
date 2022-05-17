@@ -31,8 +31,25 @@
 
 
 <header>
+        <div class="menu">
+            <a href="#home" class="active">DELICIOUS</a>
+            <div id="myLinks">
+                <a href="#about">ABOUT</a>
+                <a href="#recipes">RECIPES</a>
+                <a href="#nutrition">NUTRITION</a>
+                <a href="#blog">BLOG</a>
+                <a href="#shop">SHOP</a>
+                <a href="#contact">CONTACT</a>
+                
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         
-    <nav class="menu">
+
+
+    <!-- <nav class="menu">
         <div>
             <h1>Delicious</h1>
         </div> 
@@ -53,7 +70,7 @@
 
             <a href="/contact.html">Contact</a>
 
-            </li>
+            </li> -->
 
                 <!-- <li><i class="fa-fa-bag-shopping"></i>
 
@@ -143,20 +160,24 @@
 
 
     <section class="gallery">
-            <ul class =galleryImgList>
-                <li><img class="image1" src="./assets/home-5.jpeg"></li>
+        <div class = "carousel">
+            <div class ="slides">
+                <li><img class="image1" src="./assets/home-5.jpeg" class="slide"></li>
 
-                <li><img class="image2" src="./assets/home-6.jpeg"></li>
+                <li><img class="image2" src="./assets/home-6.jpeg" class="slide"></li>
 
-                <li><img class="image3" src="./assets/home-7.jpeg"></li>
+                <li><img class="image3" src="./assets/home-7.jpeg" class="slide"></li>
 
-                <li><img class="image4" src="./assets/home-8.jpeg"></li>
+                <li><img class="image4" src="./assets/home-8.jpeg" class="slide"></li>
 
-                <li><img class="image5" src="./assets/home-9.jpeg"></li>
+                <li><img class="image5" src="./assets/home-9.jpeg" class="slide"></li>
 
-                <li><img class="image6" src="./assets/home-10.jpeg"></li>
-
+                <li><img class="image6" src="./assets/home-10.jpeg" class="slide"></li>
             </ul>
+            <div class="controls">
+                <div class="control prev-slide">&#9668;</div>
+                <div class="control next-slide">&#9658;</div>
+            </div>
         </div>
     </section>
 
@@ -233,5 +254,8 @@
                 <p>Copyrights © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
             </div>
     </footer>
+
+    <script src="./scripts/script.js"></script>
+    
 </body>
 </html>
